@@ -14,7 +14,6 @@ const Record = mongoose.model("Record", RecordSchema);
 app.set("view engine", "pug");// configuraciòn para unir con pug
 app.set("views", "views"); //  decimos donde queremos guardar esos archivos
 app.use(express.urlencoded({extended: true}));
-app.use("/static", express.static("public"));
 
 
 app.get('/register', (req, res) => {
